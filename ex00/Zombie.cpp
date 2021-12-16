@@ -6,6 +6,7 @@ Zombie::Zombie(std::string name){
 }
 
 Zombie::~Zombie(void){
+    std::cout <<"bye bye "<< name;
     return ;
 }
 
@@ -17,8 +18,4 @@ void Zombie::announce(void){
     std::cout<< "<" << get_name() << "> " << "BraiiiiiiinnnzzzZ..."<< std::endl;
 }
 
-Zombie* Zombie::newZombie( std::string name ){
-    Zombie *z = new Zombie(name);
-    name = z->get_name();
-    return(z);
-}
+

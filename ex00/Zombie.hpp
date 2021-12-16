@@ -5,7 +5,6 @@
 #include <string>
 
 
-
 class Zombie{
 private:
     std::string name;  
@@ -14,8 +13,11 @@ public:
     ~Zombie();
     void announce(void);
     std::string get_name(void);
-    Zombie* newZombie( std::string name );
 
 };
+Zombie* newZombie( std::string name );
+void randomChump( std::string name );
+
+
 
 #endif

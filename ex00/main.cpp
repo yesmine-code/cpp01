@@ -12,12 +12,12 @@
 
 #include "Zombie.hpp"
 
+
+
 int main()
 {
     std::string name;
     name = "yesmine";
-    Zombie z(name);
-    z.newZombie(name);
-    z.announce();
+    randomChump(name);
     return 0;
 }
