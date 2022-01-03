@@ -14,6 +14,5 @@
 
 Zombie* newZombie( std::string name ){
     Zombie *z = new Zombie(name);
-    name = z->get_name();
     return(z);
 }

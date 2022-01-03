@@ -12,12 +12,14 @@
 
 #include "Zombie.hpp"
 
-
-
 int main()
 {
-    std::string name;
-    name = "yesmine";
-    randomChump(name);
+	//heap part : dynamic allocation + deleting instance (delete call destructor)
+	Zombie *z;
+	z = newZombie("yesmine heap!!");
+	z->announce();
+	delete(z); //heap destructor
+	//stack part : static instance + destructor called automatically
+	randomChump("yesmine stack!!");
     return 0;
 }
