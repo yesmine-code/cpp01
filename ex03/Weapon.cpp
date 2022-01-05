@@ -1,6 +1,7 @@
-#include "weapon.hpp"
+#include "incl/weapon.hpp"
 
-Weapon::Weapon(){
+Weapon::Weapon(std::string type){
+	this->type = type;
 	return;
 }
 Weapon::~Weapon(){

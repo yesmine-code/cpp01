@@ -2,6 +2,8 @@ NAME	=	brainz
 
 SRCS	=	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 
+INCLUDES = incl
+
 OBJS	=	${SRCS:.cpp=.o}
 
 CC	=	c++
@@ -17,7 +19,7 @@ CFLAGS	=	-Wall -Wextra -Werror
 all:	${NAME}
 
 ${NAME}:	$(OBJS)
-			$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
+			$(CC) $(CFLAGS) -I  $(INCLUDES) -o $(NAME) $(OBJS)
 
 clean:
 		${RM} ${OBJS}
