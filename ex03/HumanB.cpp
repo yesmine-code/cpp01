@@ -21,10 +21,10 @@ Weapon& HumanB::getWeapon(void)const{
 
 void HumanB::attack() const{
 	if (weapon == nullptr)
-		std::cout<<"Weapon cannot be NULL"<<std::endl;
+		std::cout << name << " attacks without a weapon "<< std::endl;
 	else {
 		if (weapon->getType().empty())
-			std::cout<<"waepon type cannot be empty"<<std::endl;
+			std::cout<<"weapon type cannot be empty"<<std::endl;
 		else
 			std::cout << name << " attacks with his " << weapon->getType() << std::endl;
 	}
